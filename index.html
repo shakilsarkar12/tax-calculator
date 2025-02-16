@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        input,.outputfield
+         {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        input[type="number"]::-webkit-outer-spin-button,
+        input[type="number"]::-webkit-inner-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+
+        .inputfield,
+        .outputfield {
+            max-width: 640px;
+            margin: 20px auto;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        #income,
+        #expense {
+            border: none;
+            padding: 15px 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+        }
+
+        button{
+            padding: 15px 20px;
+            background: #04AA6D;
+            color: white;
+            font-size: 14px;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        @media screen and (min-width: 640px) {
+            input {
+                font-family: Arial, sans-serif;
+                font-size: 20px;
+            }
+
+            .inputfield,
+            .outputfield{
+                padding: 50px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <form action="" class="inputfield">
+        <input id="income" type="number" placeholder=" Your income" required>
+        <input id="expense" type="number" placeholder=" Your expense" required>
+        <button type="submit" onclick="getInputValue()">Calculate</button>
+    </form>
+    <div class="outputfield">
+        <p id="result">0</p>
+    </div>
+
+    <script src="problem1.js"></script>
+</body>
+
+</html>
