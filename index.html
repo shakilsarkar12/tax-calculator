@@ -34,10 +34,24 @@
 
         #income,
         #expense {
-            border: none;
+            border: 1px solid transparent;
             padding: 15px 10px;
             box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+            border-radius: 5px;
+            outline: none;
         }
+
+        /* #income:required,
+        #expense:required{
+            border: 1px solid red;
+            box-shadow: 0 0 5px red;
+        } */
+
+        #income:focus,
+        #expense:focus{
+            border: 1px solid #04AA6D;
+            box-shadow: 0 0 5px #04AA6D;
+        } 
 
         button{
             padding: 15px 20px;
